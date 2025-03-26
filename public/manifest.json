@@ -1,0 +1,27 @@
+{
+  "name": "SciFund",
+  "short_name": "SciFund",
+  "description": "Decentralized Scientific Research Funding Platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#8B5CF6",
+  "theme_color": "#8B5CF6",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/images/logo-sm.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/logo-md.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/logo-lg.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+} 

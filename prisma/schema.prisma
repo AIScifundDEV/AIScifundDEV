@@ -1,0 +1,89 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String       @id @default(cuid())
+  address       String       @unique
+  name          String?
+  institution   String?
+  bio           String?
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+  projects      Project[]    @relation("Researcher")
+  contributions Contribution[]
+  reviews       Review[]     @relation("Reviewer")
+}
+
+model Project {
+  id             String         @id @default(cuid())
+  title          String
+  description    String
+  fundingGoal    Float
+  currentFunding Float          @default(0)
+  deadline       DateTime
+  status         ProjectStatus  @default(ACTIVE)
+  ipfsHash       String?
+  createdAt      DateTime       @default(now())
+  updatedAt      DateTime       @updatedAt
+  researcher     User           @relation("Researcher", fields: [researcherId], references: [id])
+  researcherId   String
+  category       Category       @relation(fields: [categoryId], references: [id])
+  categoryId     String
+  tags           String[]
+  contributions  Contribution[]
+  outputs        ResearchOutput[]
+  reviews        Review[]
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  name        String    @unique
+  description String?
+  projects    Project[]
+}
+
+model Contribution {
+  id        String   @id @default(cuid())
+  amount    Float
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String
+  project   Project  @relation(fields: [projectId], references: [id])
+  projectId String
+}
+
+model ResearchOutput {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  ipfsHash    String
+  createdAt   DateTime @default(now())
+  project     Project  @relation(fields: [projectId], references: [id])
+  projectId   String
+}
+
+model Review {
+  id          String   @id @default(cuid())
+  rating      Int
+  comment     String?
+  createdAt   DateTime @default(now())
+  project     Project  @relation(fields: [projectId], references: [id])
+  projectId   String
+  reviewer    User     @relation("Reviewer", fields: [reviewerId], references: [id])
+  reviewerId  String
+}
+
+enum ProjectStatus {
+  ACTIVE
+  FUNDED
+  COMPLETED
+} 
