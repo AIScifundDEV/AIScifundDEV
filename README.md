@@ -34,7 +34,7 @@ AISciFund is an innovative decentralized platform that revolutionizes scientific
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/AIScifundDEV/AIScifundDEV.git
+git clone git@github.com:AIScifundDEV/AIScifundDEV.git
 cd AIScifundDEV
 ```
 
@@ -97,4 +97,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Website: [https://www.scifund.xyz](https://www.scifund.xyz)
 - Twitter: [@AI_SciFund](https://x.com/AI_SciFund)
-- GitHub: [AIScifundDEV/AIScifundDEV](https://github.com/AIScifundDEV/AIScifundDEV) 
+- GitHub: [@AIScifundDEV/AIScifundDEV](https://github.com/AIScifundDEV/AIScifundDEV) 
