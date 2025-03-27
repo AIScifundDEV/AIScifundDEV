@@ -95,6 +95,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Official Links
 
-- Website: [https://www.scifund.xyz](https://www.aiscifund.xyz)
+- Website: [https://www.aiscifund.xyz](https://www.aiscifund.xyz)
 - Twitter: [@AI_SciFund](https://x.com/AI_SciFund)
 - GitHub: [@AIScifundDEV/AIScifundDEV](https://github.com/AIScifundDEV/AIScifundDEV) 
