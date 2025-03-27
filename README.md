@@ -1,6 +1,6 @@
 # AISciFund - AI-Driven Scientific Research Funding Platform
 
-[![Website](https://img.shields.io/badge/Website-scifund.xyz-blue)](https://www.scifund.xyz)
+[![Website](https://img.shields.io/badge/Website-aiscifund.xyz-blue)](https://www.aiscifund.xyz)
 [![Twitter Follow](https://img.shields.io/twitter/follow/AI_SciFund?style=social)](https://x.com/AI_SciFund)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -95,6 +95,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Official Links
 
-- Website: [https://www.scifund.xyz](https://www.scifund.xyz)
+- Website: [https://www.scifund.xyz](https://www.aiscifund.xyz)
 - Twitter: [@AI_SciFund](https://x.com/AI_SciFund)
 - GitHub: [@AIScifundDEV/AIScifundDEV](https://github.com/AIScifundDEV/AIScifundDEV) 
